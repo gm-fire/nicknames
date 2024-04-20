@@ -1,6 +1,6 @@
 {
-    "name": "gm-fire/flarum-nicknames",
-    "description": "Allow users to set nicknames.",
+    "name": "gm-fire/nicknames",
+    "description": "fork from flarum/nicknames Allow users to set nicknames.",
     "type": "flarum-extension",
     "keywords": [
         "nicknames"
