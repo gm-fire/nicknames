@@ -26,6 +26,9 @@
             "Flarum\\Nicknames\\": "src/"
         }
     },
+    "replace": {
+        "flarum/nicknames": "*"
+    },
     "extra": {
         "branch-alias": {
             "dev-main": "1.x-dev"
