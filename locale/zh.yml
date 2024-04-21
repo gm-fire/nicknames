@@ -15,15 +15,15 @@ gm-fire-nicknames:
     invalid_nickname_message: 昵称非法。请联系论坛管理员获取昵称规则。
   forum:
     change_nickname:
-      submit_button: '=> core.ref.save_changes'
-      title: '=> gm-fire-nicknames.ref.change_nickname'
+      submit_button: 保存
+      title: => gm-fire-nicknames.ref.change_nickname
     edit_user:
-      nicknames_heading: '=> gm-fire-nicknames.ref.change_nickname'
-      nicknames_text: '=> gm-fire-nicknames.ref.nickname'
+      nicknames_heading: => gm-fire-nicknames.ref.change_nickname
+      nicknames_text: => gm-fire-nicknames.ref.nickname
     settings:
-      change_nickname_button: '=> gm-fire-nicknames.ref.change_nickname'
+      change_nickname_button: => gm-fire-nicknames.ref.change_nickname
     sign_up:
-      nickname_placeholder: '=> gm-fire-nicknames.ref.nickname'
+      nickname_placeholder: => gm-fire-nicknames.ref.nickname
   ref:
     change_nickname: 更改昵称
     nickname: 昵称
