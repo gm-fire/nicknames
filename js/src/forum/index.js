@@ -10,7 +10,7 @@ import NickNameModal from './components/NicknameModal';
 
 export { default as extend } from './extend';
 
-app.initializers.add('flarum/nicknames', () => {
+app.initializers.add('gm-fire/nicknames', () => {
   extend(SettingsPage.prototype, 'accountItems', function (items) {
     if (app.forum.attribute('displayNameDriver') !== 'nickname') return;
 

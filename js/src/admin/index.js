@@ -2,7 +2,7 @@ import app from 'flarum/admin/app';
 import Alert from 'flarum/common/components/Alert';
 import Link from 'flarum/common/components/Link';
 
-app.initializers.add('flarum/nicknames', () => {
+app.initializers.add('gm-fire/nicknames', () => {
   app.extensionData
     .for('flarum-nicknames')
     .registerSetting(function () {

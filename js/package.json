@@ -1,5 +1,5 @@
 {
-    "name": "@flarum/nicknames",
+    "name": "@gm-fire/nicknames",
     "version": "0.0.0",
     "private": true,
     "prettier": "@flarum/prettier-config",
