@@ -20,7 +20,7 @@ class RegisterTest extends TestCase
      */
     protected function setUp(): void
     {
-        $this->extension('flarum-nicknames');
+        $this->extension('gm-fire-nicknames');
         $this->extend(
             (new Extend\Csrf)->exemptRoute('register')
         );
@@ -31,7 +31,7 @@ class RegisterTest extends TestCase
      */
     public function can_register_with_nickname()
     {
-        $this->setting('flarum-nicknames.set_on_registration', true);
+        $this->setting('gm-fire-nicknames.set_on_registration', true);
 
         $response = $this->send(
             $this->request('POST', '/register', [
@@ -59,7 +59,7 @@ class RegisterTest extends TestCase
      */
     public function cant_register_with_nickname_if_not_allowed()
     {
-        $this->setting('flarum-nicknames.set_on_registration', false);
+        $this->setting('gm-fire-nicknames.set_on_registration', false);
 
         $response = $this->send(
             $this->request('POST', '/register', [
@@ -80,8 +80,8 @@ class RegisterTest extends TestCase
      */
     public function cant_register_with_nickname_if_invalid_regex()
     {
-        $this->setting('flarum-nicknames.set_on_registration', true);
-        $this->setting('flarum-nicknames.regex', '^[A-z]+$');
+        $this->setting('gm-fire-nicknames.set_on_registration', true);
+        $this->setting('gm-fire-nicknames.regex', '^[A-z]+$');
 
         $response = $this->send(
             $this->request('POST', '/register', [
@@ -102,8 +102,8 @@ class RegisterTest extends TestCase
      */
     public function can_register_with_nickname_if_valid_regex()
     {
-        $this->setting('flarum-nicknames.set_on_registration', true);
-        $this->setting('flarum-nicknames.regex', '^[A-z]+$');
+        $this->setting('gm-fire-nicknames.set_on_registration', true);
+        $this->setting('gm-fire-nicknames.regex', '^[A-z]+$');
 
         $response = $this->send(
             $this->request('POST', '/register', [

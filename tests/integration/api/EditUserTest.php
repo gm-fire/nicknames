@@ -25,7 +25,7 @@ class UpdateTest extends TestCase
     {
         parent::setUp();
 
-        $this->extension('flarum-nicknames');
+        $this->extension('gm-fire-nicknames');
         $this->prepareDatabase([
             'users' => [
                 $this->normalUser(),

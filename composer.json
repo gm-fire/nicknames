@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Gm-fire\\Nicknames\\": "src/"
+            "GmFire\\Nicknames\\": "src/"
         }
     },
     "replace": {

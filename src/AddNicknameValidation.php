@@ -38,17 +38,17 @@ class AddNicknameValidation
 
         $rules['nickname'] = [
             function ($attribute, $value, $fail) {
-                $regex = $this->settings->get('flarum-nicknames.regex');
+                $regex = $this->settings->get('gm-fire-nicknames.regex');
                 if ($regex && ! preg_match_all("/$regex/", $value)) {
-                    $fail($this->translator->trans('flarum-nicknames.api.invalid_nickname_message'));
+                    $fail($this->translator->trans('gm-fire-nicknames.api.invalid_nickname_message'));
                 }
             },
-            'min:'.$this->settings->get('flarum-nicknames.min'),
-            'max:'.$this->settings->get('flarum-nicknames.max'),
+            'min:'.$this->settings->get('gm-fire-nicknames.min'),
+            'max:'.$this->settings->get('gm-fire-nicknames.max'),
             'nullable'
         ];
 
-        if ($this->settings->get('flarum-nicknames.unique')) {
+        if ($this->settings->get('gm-fire-nicknames.unique')) {
             $rules['nickname'][] = 'unique:users,username'.$idSuffix;
             $rules['nickname'][] = 'unique:users,nickname'.$idSuffix;
             $rules['username'][] = 'unique:users,nickname'.$idSuffix;

@@ -1,4 +1,4 @@
-flarum-nicknames:
+gm-fire-nicknames:
   admin:
     permissions:
       edit_own_nickname_label: Edit own nickname
@@ -16,14 +16,14 @@ flarum-nicknames:
   forum:
     change_nickname:
       submit_button: => core.ref.save_changes
-      title:  => flarum-nicknames.ref.change_nickname
+      title:  => gm-fire-nicknames.ref.change_nickname
     edit_user:
-      nicknames_heading: => flarum-nicknames.ref.change_nickname
-      nicknames_text: => flarum-nicknames.ref.nickname
+      nicknames_heading: => gm-fire-nicknames.ref.change_nickname
+      nicknames_text: => gm-fire-nicknames.ref.nickname
     settings:
-      change_nickname_button: => flarum-nicknames.ref.change_nickname
+      change_nickname_button: => gm-fire-nicknames.ref.change_nickname
     sign_up:
-      nickname_placeholder: => flarum-nicknames.ref.nickname
+      nickname_placeholder: => gm-fire-nicknames.ref.nickname
   ref:
     change_nickname: Change Nickname
     nickname: Nickname

@@ -41,12 +41,12 @@ return [
         }),
 
     (new Extend\Settings())
-        ->default('flarum-nicknames.set_on_registration', true)
-        ->default('flarum-nicknames.min', 1)
-        ->default('flarum-nicknames.max', 150)
+        ->default('gm-fire-nicknames.set_on_registration', true)
+        ->default('gm-fire-nicknames.min', 1)
+        ->default('gm-fire-nicknames.max', 150)
         ->serializeToForum('displayNameDriver', 'display_name_driver', null, 'username')
-        ->serializeToForum('setNicknameOnRegistration', 'flarum-nicknames.set_on_registration', 'boolval')
-        ->serializeToForum('randomizeUsernameOnRegistration', 'flarum-nicknames.random_username', 'boolval'),
+        ->serializeToForum('setNicknameOnRegistration', 'gm-fire-nicknames.set_on_registration', 'boolval')
+        ->serializeToForum('randomizeUsernameOnRegistration', 'gm-fire-nicknames.random_username', 'boolval'),
 
     (new Extend\Validator(UserValidator::class))
         ->configure(AddNicknameValidation::class),

@@ -18,7 +18,7 @@ app.initializers.add('gm-fire/nicknames', () => {
       items.add(
         'changeNickname',
         <Button className="Button" onclick={() => app.modal.show(NickNameModal)}>
-          {app.translator.trans('flarum-nicknames.forum.settings.change_nickname_button')}
+          {app.translator.trans('gm-fire-nicknames.forum.settings.change_nickname_button')}
         </Button>
       );
     }
@@ -36,10 +36,10 @@ app.initializers.add('gm-fire/nicknames', () => {
     items.add(
       'nickname',
       <div className="Form-group">
-        <label>{app.translator.trans('flarum-nicknames.forum.edit_user.nicknames_heading')}</label>
+        <label>{app.translator.trans('gm-fire-nicknames.forum.edit_user.nicknames_heading')}</label>
         <input
           className="FormControl"
-          placeholder={extractText(app.translator.trans('flarum-nicknames.forum.edit_user.nicknames_text'))}
+          placeholder={extractText(app.translator.trans('gm-fire-nicknames.forum.edit_user.nicknames_text'))}
           bidi={this.nickname}
         />
       </div>,
@@ -82,7 +82,7 @@ app.initializers.add('gm-fire/nicknames', () => {
             className="FormControl"
             name="nickname"
             type="text"
-            placeholder={extractText(app.translator.trans('flarum-nicknames.forum.sign_up.nickname_placeholder'))}
+            placeholder={extractText(app.translator.trans('gm-fire-nicknames.forum.sign_up.nickname_placeholder'))}
             bidi={this.nickname}
             disabled={this.loading || this.isProvided('nickname')}
             required={app.forum.attribute('randomizeUsernameOnRegistration')}
