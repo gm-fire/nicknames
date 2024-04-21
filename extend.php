@@ -7,11 +7,11 @@
  * LICENSE file that was distributed with this source code.
  */
 
-namespace Flarum\Nicknames;
+namespace GmFire\Nicknames;
 
 use Flarum\Api\Serializer\UserSerializer;
 use Flarum\Extend;
-use Flarum\Nicknames\Access\UserPolicy;
+use GmFire\Nicknames\Access\UserPolicy;
 use Flarum\User\Event\Saving;
 use Flarum\User\Search\UserSearcher;
 use Flarum\User\User;

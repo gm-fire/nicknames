@@ -7,7 +7,7 @@
  * LICENSE file that was distributed with this source code.
  */
 
-namespace Flarum\Nicknames;
+namespace GmFire\Nicknames;
 
 use Flarum\Settings\SettingsRepositoryInterface;
 use Illuminate\Validation\Validator;

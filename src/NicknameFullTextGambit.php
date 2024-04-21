@@ -7,7 +7,7 @@
  * LICENSE file that was distributed with this source code.
  */
 
-namespace Flarum\Nicknames;
+namespace GmFire\Nicknames;
 
 /*
  * This file is part of Flarum.
