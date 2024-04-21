@@ -1,5 +1,5 @@
 {
-    "name": "gm-fire/nicknames",
+    "name": "flarum/nicknames",
     "description": "fork from flarum/nicknames Allow users to set nicknames.",
     "type": "flarum-extension",
     "keywords": [
@@ -25,9 +25,6 @@
         "psr-4": {
             "Flarum\\Nicknames\\": "src/"
         }
-    },
-    "replace": {
-        "flarum/nicknames": "*"
     },
     "extra": {
         "branch-alias": {
