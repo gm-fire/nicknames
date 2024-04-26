@@ -32,7 +32,7 @@ class UserPolicy extends AbstractPolicy
      */
     public function editNickname(User $actor, User $user)
     {
-        if ($actor->isGuest() && ! $user->exists && $this->settings->get('gm-fire-nicknames.set_on_registration')) {
+        if ($actor->isGuest() && ! $user->exists && $this->settings->get('flarum-nicknames.set_on_registration')) {
             return $this->allow();
         } elseif ($actor->id === $user->id && $actor->hasPermission('user.editOwnNickname')) {
             return $this->allow();

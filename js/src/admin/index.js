@@ -17,33 +17,33 @@ app.initializers.add('gm-fire/nicknames', () => {
       );
     })
     .registerSetting({
-      setting: 'gm-fire-nicknames.set_on_registration',
+      setting: 'flarum-nicknames.set_on_registration',
       type: 'boolean',
       label: app.translator.trans('gm-fire-nicknames.admin.settings.set_on_registration_label'),
     })
     .registerSetting({
-      setting: 'gm-fire-nicknames.random_username',
+      setting: 'flarum-nicknames.random_username',
       type: 'boolean',
       label: app.translator.trans('gm-fire-nicknames.admin.settings.random_username_label'),
       help: app.translator.trans('gm-fire-nicknames.admin.settings.random_username_help'),
     })
     .registerSetting({
-      setting: 'gm-fire-nicknames.unique',
+      setting: 'flarum-nicknames.unique',
       type: 'boolean',
       label: app.translator.trans('gm-fire-nicknames.admin.settings.unique_label'),
     })
     .registerSetting({
-      setting: 'gm-fire-nicknames.regex',
+      setting: 'flarum-nicknames.regex',
       type: 'text',
       label: app.translator.trans('gm-fire-nicknames.admin.settings.regex_label'),
     })
     .registerSetting({
-      setting: 'gm-fire-nicknames.min',
+      setting: 'flarum-nicknames.min',
       type: 'number',
       label: app.translator.trans('gm-fire-nicknames.admin.settings.min_label'),
     })
     .registerSetting({
-      setting: 'gm-fire-nicknames.max',
+      setting: 'flarum-nicknames.max',
       type: 'number',
       label: app.translator.trans('gm-fire-nicknames.admin.settings.max_label'),
     })
