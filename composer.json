@@ -24,9 +24,6 @@
         "flarum/nicknames": "*"
     },
     "extra": {
-        "branch-alias": {
-            "dev-main": "1.x-dev"
-        },
         "flarum-extension": {
             "title": "Nicknames",
             "category": "feature",
