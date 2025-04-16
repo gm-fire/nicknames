@@ -61,8 +61,7 @@
         "test:setup": "@php tests/integration/setup.php"
     },
     "require-dev": {
-        "flarum/testing": "^1.0.0",
-        "flarum/core": "1.x-dev"
+        "flarum/testing": "^1.0.0"
     },
     "scripts-descriptions": {
         "test": "Runs all tests.",
